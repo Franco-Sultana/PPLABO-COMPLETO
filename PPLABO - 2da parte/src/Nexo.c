@@ -467,7 +467,6 @@ eCliente eCliente_CargarUno(eLocalidad listaLocalidad[], int tamLocalidad)
 	utn_getCuit(auxCliente.cuit, "Ingrese cuit (con guiones): ", "(!)Cuit invalido. ", sizeof(auxCliente.cuit));
 	utn_getTexto(auxCliente.direccion, "Ingrese direccion del cliente: ",
 			     "(!)Direccion invalida. ", sizeof(auxCliente.direccion));
-	eLocalidad_MostrarListaNumerada(listaLocalidad, tamLocalidad);
 	auxCliente.idLocalidad =  eLocalidad_ObterIdDelIndex(listaLocalidad, tamLocalidad);
 	printf("  ID LOCA: %d   ", auxCliente.idLocalidad);
 	return auxCliente;
